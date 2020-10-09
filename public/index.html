@@ -15,6 +15,9 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <!-- bootstrap-css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- custom-css -->
+  <link rel="stylesheet" href="css/styles.css">
+
   <style>
     .attribution {
       font-size: 11px;
@@ -32,15 +35,13 @@
 
   <!-- header -->
   <header class="main-header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-          <ul class="navbar-nav ">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.svg" alt="main-logo" class="img-fluid">
+        </a>
+        <div class=" d-flex justify-content-end" id="navbarNav">
+          <ul class="navbar-nav d-flex flex-row">
             <li class="nav-item active">
               <a class="nav-link" href="#">Features <span class="sr-only">(current)</span></a>
             </li>
@@ -50,9 +51,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#"> Sign In
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
           </ul>
         </div>
@@ -64,25 +62,28 @@
   <section class="main-hero my-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 order-md-2">
+        <!-- col-1 -->
+        <div class="col-md-6 order-md-2 my-5">
           <img src="assets/img/illustration-1.svg" alt="hero" class="img-fluid">
         </div>
-        <div class="col-md-6 order-md-1">
+        <!-- col-1 -->
+        <!-- col-2 -->
+        <div class="col-md-6 order-md-1 text-center">
           <h1 class="title"> All your files in one secure location, accessible anywhere.
           </h1>
-          <p class="paragraph">Fylo stores your most important files in one secure location.Access them wherever you
+          <p class="paragraph p-3">Fylo stores your most important files in one secure location.Access them wherever you
             need, share and collaborate with friends,family, and co-workers.</p>
           <!-- form -->
-          <form>
+          <form class="p-3">
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="Enter your email...">
             </div>
-            <button type="submit" class="btn btn-primary"> Get Started</button>
+            <button type="submit" class="btn btn-primary w-100"> Get Started</button>
           </form>
           <!-- form -->
         </div>
+        <!-- col-2 -->
       </div>
     </div>
   </section>
