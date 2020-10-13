@@ -1,0 +1,47 @@
+:root{
+    --primary-color: hsl(243, 87%, 12%);
+    --secondary-color:hsl(238, 22%, 44%);
+
+    --acent-color:hsl(224, 93%, 58%);
+    --acent-color2:hsl(170, 45%, 43%);
+
+    --neutral-color:hsl(240, 75%, 98%);
+    --meutral-color2: hsl(0, 0%, 75%);
+
+    --main-font:'Open Sans', sans-serif;
+    --alt-font:'Raleway', sans-serif;
+}
+
+/* -----------------------
+          BASE
+-------------------------*/
+body{
+    font-family: var(--main-font);
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--alt-font);
+    font-weight:300;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* -----------------------
+          STYLES
+-------------------------*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
