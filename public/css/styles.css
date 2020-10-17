@@ -6,7 +6,7 @@
     --acent-color2:hsl(170, 45%, 43%);
 
     --neutral-color:hsl(240, 75%, 98%);
-    --meutral-color2: hsl(0, 0%, 75%);
+    --neutral-color2: hsl(0, 0%, 75%);
 
     --main-font:'Open Sans', sans-serif;
     --alt-font:'Raleway', sans-serif;
@@ -19,6 +19,7 @@ body{
     font-family: var(--main-font);
     font-weight: 400;
 }
+
 
 h1,h2,h3,h4,h5,h6{
     font-family: var(--alt-font);
@@ -44,4 +45,42 @@ a{
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+/* -----------------------
+          HEADER
+-------------------------*/
+.main-logo{
+    width:100px;
+}
+
+.nav-link{
+    margin-right: 1rem;
+    color:var(--primary-color)!important;
+    font-size: 700;
+}
+
+
+
+/* -----------------------
+          hero
+-------------------------*/
+
+.hero-text{
+    color: var(--primary-color);
+   
+}
+
+.main-form-input{
+    border:1px solid var(--primary-color);
+    border-radius:0;
+}
+
+.main-form-input::placeholder{
+    color: var(--neutral-color2);
+}
+
+.btn{
+    background-color:var(--acent-color);
 }
