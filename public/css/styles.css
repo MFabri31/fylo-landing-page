@@ -20,10 +20,13 @@ body{
     font-weight: 400;
 }
 
-
 h1,h2,h3,h4,h5,h6{
     font-family: var(--alt-font);
     font-weight:300;
+}
+
+ul{
+    padding: 0
 }
 
 li{
@@ -44,7 +47,25 @@ a{
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    /* color: hsl(228, 45%, 44%); */
+    color:var(--acent-color2);
+}
+
+.divisor{
+    width: 12rem;
+    padding:0.5em 0;
+    border-bottom: 1px solid;
+    color: var(--acent-color2);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media screen and (min-width: 768px){
+    .divisor{
+        margin-right:0 ;
+        margin-left:0 ;
+    }
 }
 
 
@@ -64,7 +85,7 @@ a{
 
 
 /* -----------------------
-          hero
+          HERO
 -------------------------*/
 
 .hero-text{
@@ -83,4 +104,59 @@ a{
 
 .btn{
     background-color:var(--acent-color);
+}
+
+/* -----------------------
+          FEATURES
+-------------------------*/
+.features{
+    background-color: var(--neutral-color);
+}
+
+.user-avatar-img{
+    width:40px;
+}
+
+.user-avatar-text{
+    font-size: 12px;
+}
+
+.card{
+    max-width:22rem;    
+}
+
+
+/* -----------------------
+          CTA
+-------------------------*/
+.cta{
+    background-color:var(--secondary-color);
+}
+
+.cta-paragraph{
+    color: var(--neutral-color2);
+}
+
+
+/* -----------------------
+          FOOTER
+-------------------------*/
+.main-footer{
+    background-color:var(--primary-color);
+    color:var(--neutral-color2)
+}
+
+.nav-link-footer{
+    color:var(--neutral-color2);
+    /* margin-bottom: 10rem; */
+}
+
+.nav-item-footer{
+
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icon{
+    margin-left: 0.5rem;
 }
