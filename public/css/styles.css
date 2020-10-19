@@ -37,6 +37,10 @@ a{
     text-decoration:none;
 }
 
+a[class*='nav-link']:hover{
+    color:var(--neutral-color2);
+}
+
 
 /* -----------------------
           STYLES
@@ -44,10 +48,10 @@ a{
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .attribution a {
-    /* color: hsl(228, 45%, 44%); */
     color:var(--acent-color2);
 }
 
@@ -73,7 +77,7 @@ a{
           HEADER
 -------------------------*/
 .main-logo{
-    width:100px;
+    width:6rem;
 }
 
 .nav-link{
@@ -83,10 +87,26 @@ a{
 }
 
 
+@media screen and (min-width:768px){
+    .main-logo{
+        width:8rem;
+    }
+}
+
 
 /* -----------------------
           HERO
 -------------------------*/
+
+.title{
+    font-weight: 700;
+}
+
+@media screen and (min-width:768px){
+    .title{
+        font-size: 2.4rem;
+    }
+}
 
 .hero-text{
     color: var(--primary-color);
@@ -104,6 +124,33 @@ a{
 
 .btn{
     background-color:var(--acent-color);
+    width:100%;
+}
+
+
+
+@media screen and (min-width:768px){
+    .main-form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .main-form-input{
+        width: 20rem;
+    }
+    
+    .btn{
+        width: 10rem;
+        padding: 0.5rem;
+        margin-bottom: 0.8rem;
+        margin-right: 2rem;
+    }
+
+    .main-form-input{
+        padding: 1rem;
+    }
+    
 }
 
 /* -----------------------
@@ -111,6 +158,13 @@ a{
 -------------------------*/
 .features{
     background-color: var(--neutral-color);
+}
+
+@media screen and (min-width:768px){
+    .features-title{
+        font-size: 2rem;
+    }
+    
 }
 
 .user-avatar-img{
@@ -138,6 +192,12 @@ a{
 }
 
 
+@media screen and (min-width:768px){
+    .btn-cta{
+        width:13rem;
+    }
+}
+
 /* -----------------------
           FOOTER
 -------------------------*/
@@ -148,11 +208,9 @@ a{
 
 .nav-link-footer{
     color:var(--neutral-color2);
-    /* margin-bottom: 10rem; */
 }
 
 .nav-item-footer{
-
     margin-bottom: 0.5rem;
 }
 
