@@ -99,7 +99,10 @@ a[class*='nav-link']:hover{
 -------------------------*/
 
 .title{
+    font-size: 2rem;
     font-weight: 700;
+    font-family: var(--alt-font);
+    color:var(--primary-color);
 }
 
 @media screen and (min-width:768px){
@@ -160,6 +163,13 @@ a[class*='nav-link']:hover{
     background-color: var(--neutral-color);
 }
 
+.features-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color)
+}
+
+
 @media screen and (min-width:768px){
     .features-title{
         font-size: 2rem;
@@ -173,6 +183,7 @@ a[class*='nav-link']:hover{
 
 .user-avatar-text{
     font-size: 12px;
+    margin-top: 1rem;
 }
 
 .card{
@@ -187,12 +198,20 @@ a[class*='nav-link']:hover{
     background-color:var(--secondary-color);
 }
 
-.cta-paragraph{
-    color: var(--neutral-color2);
+.cta-title{
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
+.cta-paragraph{
+    color: var(--neutral-color);
+}
 
 @media screen and (min-width:768px){
+    .cta-title{
+        font-size: 2rem;
+        font-weight: 700;
+    }
     .btn-cta{
         width:13rem;
     }
@@ -214,7 +233,10 @@ a[class*='nav-link']:hover{
     margin-bottom: 0.5rem;
 }
 
-
 .social-icon{
     margin-left: 0.5rem;
+}
+
+.contact-icon{
+    margin-right: 1rem;
 }
